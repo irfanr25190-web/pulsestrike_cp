@@ -11,8 +11,17 @@
         <div class="overlay"></div>
     
         <header>
+            <div class="regiment-logo">
+                <img src="RR.png" alt="Regiment Logo">
+            </div>
+
             <nav>
                 <div class="logo">PULSESTRIKE</div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="nav-links">
                     <a href="pulsestrike.html" class="active">Home</a>
                     <a href="gameinfo.html">Game Info</a>
@@ -191,5 +200,14 @@ The strategist deciding when to push and when to hold
             </div>
         </div>
     </footer>
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
